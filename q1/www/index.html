@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakestagram from Q4</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flex/styles.css">
+    <script src="js/app.js"></script>
+  </head>
+
+  <body>
+    <header>
+
+    	<div class="container">
+
+    		<div class="profile">
+
+    			<div class="profile-image">
+
+    				<img src="img/lana.png" alt="avatar-lana">
+
+    			</div>
+
+    			<div class="profile-user-settings">
+
+    				<h1 class="profile-user-name">Lana's Decor</h1>
+
+    			</div>
+          <p class= "note"></p>
+
+
+    			<div class="profile-bio">
+
+    				<p>Award winning interior design. Adipisicing elite,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    			</div>
+
+    		</div>
+    		<!-- End of profile section -->
+
+    	</div>
+    	<!-- End of container -->
+
+    </header>
+
+    <main>
+
+      <div class="container-fluid">
+
+          <div id="overlay" onclick="off()">
+
+            <div class="mainRow"> <!--entire container of the image & comments-->
+
+              <div class="row">
+              <div class="comment-left-mobile">
+                <img src="img/lana.png" class="smallAvatar">
+              </div>
+
+              <div class="comment-right-mobile">
+                <strong>josesandoval</strong>
+                <p>Nagano Prefecture, Japan</p>
+                <br>
+              </div>
+              </div>
+
+              <div class="row">
+                <div class="columnLeft">
+                  <img id="myImage">
+                    <div class="small-screen">
+                      <div class="row">
+                        <img src="img/ig-heart.png" alt="ig-heart" class="smallAvatarHeart">
+                        <img src="img/ig-comment-fina.png" alt="ig-comment" class="smallAvatarIcon">
+                        <img src="img/upload.png" alt="ig-upload" class="smallAvatarUpload">
+                        <img src="img/bookmark.png" alt="ig-bookmark" class="smallAvatarBookmark">
+
+                      </div>
+                      <div class="row">
+                        <h2>7 likes</h2>
+
+                      </div>
+
+                      <div class="row">
+                        <h3> 33 minutes ago </h3>
+                      </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="columnRight">
+
+                  <div class="comment-left">
+                    <img src="img/lana.png" class="smallAvatar">
+                  </div>
+
+                  <div class="comment-right">
+                    <strong>Lana's Decor</strong>
+                    <br>
+                    Nagano Prefecture, Japan
+                    <br>
+
+                    <hr>
+                  </div>
+
+                  <div class="comment-left">
+                    <img src="http://wlu-cp202.appspot.com/img/BasquiatHalloween.jpg" class="smallAvatar">
+                  </div>
+
+                  <div class="comment-right">
+                    <strong>josesandoval</strong> Beauty!
+
+                    <br>
+                    <br>
+                    27m
+                  </div>
+
+                             <div class="comment-left">
+                    <img src="img/lana.png" class="smallAvatar">
+                  </div>
+
+                  <div class="comment-right">
+                    <strong>Lana's Decor</strong> Thank you professor!
+                              <br>
+                    <br>
+                    20m
+                  </div>
+
+                                 <div class="comment-left">
+                    <img src="img/kanye.png" class="smallAvatar">
+                  </div>
+
+                  <div class="comment-right">
+                    <strong>Kanye West</strong> Nicer than my home.
+                    <br>
+                    <br>
+                    17m
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <hr>
+                  </div>
+
+                  <div class="row">
+
+                      <img src="img/ig-heart.png" alt="ig-heart" class="smallAvatarHeart">
+                      <img src="img/ig-comment-fina.png" alt="ig-comment" class="smallAvatarIcon">
+                      <img src="img/upload.png" alt="ig-upload" class="smallAvatarUpload">
+                      <img src="img/bookmark.png" alt="ig-bookmark" class="smallAvatarBookmark">
+
+                  </div>
+
+                  <div class="row">
+                    <h2>7 likes</h2>
+
+                  </div>
+
+                  <div class="row">
+                    <h3> 33 minutes ago </h3>
+                  </div>
+
+
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+
+      <!--End of overlay-->
+
+    	<div class="container">
+
+    		<div class="gallery">
+
+
+    			<div class="gallery-item" tabindex="0">
+
+    				<img src="img/pic1-final.png" alt="room" onclick="on('img/pic1-final.png');">
+
+    			</div>
+
+
+    			<div class="gallery-item" tabindex="0">
+
+    				<img src="img/pic2-final.png" class="gallery-image" alt="shower-water" onclick="on('img/pic2-final.png');">
+
+    			</div>
+
+
+    			<div class="gallery-item" tabindex="0">
+
+    				<img src="img/pic3-final.png" class="gallery-image" alt="oak" onclick="on('img/pic3-final.png');">
+
+    				</div>
+
+
+    			<div class="gallery-item" tabindex="0">
+
+    				<img src="img/pic4-final.png" class="gallery-image" alt="cave" onclick="on('img/pic4-final.png');">
+
+    			</div>
+
+    			<div class="gallery-item" tabindex="0">
+
+    				<img src="img/pic5-final.png" class="gallery-image" alt="house" onclick="on('img/pic5-final.png');">
+
+    			</div>
+
+    			<div class="gallery-item" tabindex="0">
+
+    				<img src="img/pic6.png" class="gallery-image" alt="roof" onclick="on('img/pic6.png');">
+
+    			</div>
+
+    			<div class="gallery-item" tabindex="0">
+
+    				<img src="img/pic7.png" class="gallery-image" alt="xmas" onclick="on('img/pic7.png');">
+
+    			</div>
+
+    			<div class="gallery-item" tabindex="0">
+
+    				<img src="img/pic8-final.png" class="gallery-image" alt="pink-house" onclick="on('img/pic8-final.png');">
+
+    			</div>
+
+    			<div class="gallery-item" tabindex="0">
+
+    				<img src="img/pic9-final.png" class="gallery-image" alt="snowflake-spa" onclick="on('img/pic9-final.png');">
+
+    			</div>
+
+    			<div class="gallery-item" tabindex="0">
+
+    				<img src="img/pic10-final.png" class="gallery-image" alt="fireplace" onclick="on('img/pic10-final.png');">
+
+    			</div>
+
+    			<div class="gallery-item" tabindex="0">
+
+    				<img src="img/pic11.png" class="gallery-image" alt="room" onclick="on('img/pic11.png');">
+
+    			</div>
+
+    			<div class="gallery-item" tabindex="0">
+
+    				<img src="img/pic12.png" class="gallery-image" alt="blossom" onclick="on('img/pic12.png');">
+
+    			</div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="img/pic13-final.png" class="gallery-image" alt="trees" onclick="on('img/pic13-final.png');">
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="img/pic14-final.png" class="gallery-image" alt="waterfall" onclick="on('img/pic14-final.png');">
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="img/pic15-final.png" class="gallery-image" alt="greece" onclick="on('img/pic15-final.png');">
+
+          </div>
+
+    		</div>
+    		<!-- End of gallery -->
+
+    	</div>
+    	<!-- End of container -->
+
+    </main>
+
+
+  </body>
+</html>
